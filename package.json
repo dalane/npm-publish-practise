@@ -2,11 +2,19 @@
   "name": "@dalane/npm-publish-practise",
   "version": "1.0.0",
   "description": "",
-  "main": "./lib/npm-publish-practise.js",
+  "main": "./lib/server.js",
   "scripts": {
-      "start": "node ./lib/npm-publish-practise.js",
-      "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./scripts/run-server",
+    "test": "./scripts/run-test"
   },
   "author": "Dallas Ewing <developers@dalane.io>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.2",
+    "jasmine": "^2.4.1",
+    "supertest": "^1.1.0"
+  }
 }
