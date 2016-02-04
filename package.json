@@ -1,0 +1,12 @@
+{
+  "name": "@dalane/npm-publish-practise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/npm-publish-practise.js",
+  "scripts": {
+      "start": "node ./lib/npm-publish-practise.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dallas Ewing <developers@dalane.io>",
+  "license": "ISC"
+}
