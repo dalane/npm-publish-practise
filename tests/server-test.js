@@ -1,12 +1,14 @@
 "use strict";
 
-var supertest = require('supertest');
+var request = require('supertest');
 var server = require('../lib/server.js');
 
-describe('GET /', function () {
-    beforeEach(function () {});
-    afterEach(function () {});
-    it("should return \"hello world\"", function (done) {
-        supertest(server).get('/').expect('hello jenkins', done);
+describe("server", function () {
+    describe('GET /', function() {
+      it('respond with hello world', function(done) {
+        request(server)
+            .get('/')
+            .expect('hello world', done());
+        });
     });
 });
